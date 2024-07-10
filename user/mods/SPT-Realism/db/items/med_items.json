@@ -100,7 +100,7 @@
         },
         "StimulatorBuffs": "",
         "MaxHpResource": 1,
-        "medUseTime": 6,
+        "medUseTime": 3,
         "hpResourceRate": 0
     },
     "army": {
@@ -114,7 +114,7 @@
         },
         "StimulatorBuffs": "",
         "MaxHpResource": 2,
-        "medUseTime": 5,
+        "medUseTime": 3,
         "hpResourceRate": 0
     },
     "CAT": {
@@ -165,7 +165,7 @@
             }
         },
         "StimulatorBuffs": "Buffs_calok",
-        "MaxHpResource": 1,
+        "MaxHpResource": 2,
         "medUseTime": 3.5,
         "hpResourceRate": 0
     },
@@ -204,11 +204,17 @@
                 "delay": 10,
                 "duration": 0,
                 "fadeOut": 0
+            },
+            "HeavyBleeding": {
+                "delay": 5,
+                "duration": 0,
+                "fadeOut": 0,
+                "cost": 2
             }
         },
         "StimulatorBuffs": "",
         "MaxHpResource": 4,
-        "medUseTime": 9,
+        "medUseTime": 8,
         "hpResourceRate": 0
     },
     "salewa": {
@@ -247,7 +253,7 @@
             }
         },
         "StimulatorBuffs": "Buffs_IFAK",
-        "MaxHpResource": 7,
+        "MaxHpResource": 6,
         "medUseTime": 6,
         "hpResourceRate": 0
     },
@@ -263,7 +269,7 @@
                 "delay": 5,
                 "duration": 0,
                 "fadeOut": 0,
-                "cost": 2
+                "cost": 1
             },
             "Fracture": {
                 "delay": 10,
@@ -273,7 +279,7 @@
             }
         },
         "StimulatorBuffs": "Buffs_AFAK",
-        "MaxHpResource": 6,
+        "MaxHpResource": 7,
         "medUseTime": 7.5,
         "hpResourceRate": 0
     },
@@ -289,7 +295,7 @@
                 "delay": 5,
                 "duration": 0,
                 "fadeOut": 0,
-                "cost": 2
+                "cost": 1
             },
             "Fracture": {
                 "delay": 10,
@@ -299,7 +305,7 @@
             }
         },
         "StimulatorBuffs": "Buffs_grizzly",
-        "MaxHpResource": 20,
+        "MaxHpResource": 15,
         "medUseTime": 10,
         "hpResourceRate": 0
     },
@@ -315,7 +321,7 @@
         },
         "StimulatorBuffs": "Buffs_vaseline",
         "MaxHpResource": 6,
-        "medUseTime": 6.5,
+        "medUseTime": 5,
         "hpResourceRate": 0
     },
     "golden": {
@@ -324,19 +330,20 @@
                 "value": 1
             }
         },
-        "effects_damage": {},
+        "effects_damage": {
+            "LightBleeding": {
+                "delay": 30,
+                "duration": 1,
+                "fadeOut": 0,
+                "cost": 2
+            }
+        },
         "StimulatorBuffs": "Buffs_golden",
         "MaxHpResource": 5,
-        "medUseTime": 7,
+        "medUseTime": 5,
         "hpResourceRate": 0
     },
     "cms": {
-        "Energy": {
-            "value": -35
-        },
-        "Hydration": {
-            "value": -35
-        },
         "effects_damage": {
             "DestroyedPart": {
                 "delay": 0,
@@ -357,19 +364,11 @@
             }
         },
         "StimulatorBuffs": "Buffs_cms",
-        "MaxHpResource": 4,
-        "medUseTime": 16,
+        "MaxHpResource": 5,
+        "medUseTime": 15,
         "hpResourceRate": 0
     },
     "surv12": {
-        "effects_health": {
-            "Energy": {
-                "value": -30
-            },
-            "Hydration": {
-                "value": -30
-            }
-        },
         "effects_damage": {
             "DestroyedPart": {
                 "delay": 0,
@@ -390,8 +389,8 @@
             }
         },
         "StimulatorBuffs": "Buffs_surv12",
-        "MaxHpResource": 8,
-        "medUseTime": 20,
+        "MaxHpResource": 10,
+        "medUseTime": 15,
         "hpResourceRate": 0
     }
 }
